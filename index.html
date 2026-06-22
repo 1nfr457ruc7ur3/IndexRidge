@@ -1,24 +1,201 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="utf-8" />
-  <title>IndexRidge | GeoSpectral UK Data Portal</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="IndexRidge is a quiet B2B geospatial data and analytics studio for structured UK regional intelligence.">
+  <meta name="theme-color" content="#f8fafc">
+  <title>IndexRidge | Structured geospatial intelligence</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            paper: '#f8fafc',
+            surface: '#ffffff',
+            surfaceAlt: '#f1f5f9',
+            ink: '#0f172a',
+            muted: '#475569',
+            line: '#cbd5e1',
+            accent: '#1e40af'
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+            mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace']
+          },
+          letterSpacing: {
+            quiet: '-0.055em'
+          }
+        }
+      }
+    }
+  </script>
+
   <style>
-    html,body{margin:0;padding:0;height:100%;background:#0b0f14;color:#e6f1f0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
-    main{display:grid;place-items:center;height:100%;padding:24px}
-    h1{font-size:clamp(28px,6vw,64px);letter-spacing:-.02em;line-height:1.1}
-    p{opacity:.72;margin-top:14px;font-size:clamp(14px,2vw,20px)}
-    a{color:#7ee787}
+    html { background: #f8fafc; }
+    body { text-rendering: optimizeLegibility; }
+    ::selection { background: #0f172a; color: #f8fafc; }
+    .hairline { border-color: rgba(15, 23, 42, 0.16); }
+    a:focus-visible { outline: 3px solid #1e40af; outline-offset: 4px; border-radius: 9999px; }
   </style>
 </head>
-<body>
-  <main>
-    <div>
-      <h1>IndexRidge</h1>
-      <p>GeoSpectral UK Data Portal — Secure B2B Geospatial Data Delivery Node. Authorized AWS Marketplace Data Source.</p>
-      <p style="margin-top:8px;opacity:.55">Contact: IndexRidge@outlook.com</p>
-    </div>
+<body class="min-h-screen bg-paper text-ink antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-1/2 focus:top-4 focus:z-50 focus:-translate-x-1/2 focus:rounded-full focus:bg-ink focus:px-5 focus:py-3 focus:text-sm focus:font-medium focus:text-paper">Skip to content</a>
+
+  <header class="mx-auto flex w-full max-w-7xl items-center justify-between px-6 py-7 sm:px-8 lg:px-10" aria-label="Primary">
+    <a href="#top" class="group inline-flex items-center gap-3" aria-label="IndexRidge home">
+      <span class="flex h-8 w-8 items-center justify-center rounded-full border hairline text-[11px] font-semibold tracking-[0.18em] text-ink">IR</span>
+      <span class="text-sm font-medium uppercase tracking-[0.18em] text-ink">IndexRidge</span>
+    </a>
+    <nav class="hidden items-center gap-8 text-[13px] font-medium text-muted md:flex" aria-label="Site navigation">
+      <a class="transition hover:text-ink" href="#data">Data posture</a>
+      <a class="transition hover:text-ink" href="#delivery">Delivery</a>
+      <a class="transition hover:text-ink" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="top" class="mx-auto max-w-7xl px-6 pb-20 pt-16 sm:px-8 sm:pt-24 lg:px-10 lg:pb-28">
+      <div class="grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+        <div>
+          <p class="mb-8 font-mono text-xs font-semibold uppercase tracking-[0.28em] text-accent">Structured geospatial intelligence</p>
+          <h1 class="max-w-5xl text-6xl font-semibold tracking-quiet text-ink sm:text-7xl lg:text-[6.8rem] lg:leading-[0.9]">
+            Regional data, prepared for careful decisions.
+          </h1>
+        </div>
+        <div class="max-w-xl lg:justify-self-end">
+          <p class="text-xl leading-8 text-ink/80 sm:text-2xl sm:leading-9">
+            IndexRidge is a quiet B2B data studio focused on clean regional signals, geospatial structure and procurement-ready delivery for analytical teams.
+          </p>
+          <div class="mt-10 grid grid-cols-2 gap-px overflow-hidden rounded-2xl border hairline bg-ink/10 text-sm">
+            <div class="bg-paper p-5">
+              <p class="font-mono text-[11px] font-semibold uppercase tracking-[0.24em] text-muted">Focus</p>
+              <p class="mt-3 font-medium text-ink">UK regional data</p>
+            </div>
+            <div class="bg-paper p-5">
+              <p class="font-mono text-[11px] font-semibold uppercase tracking-[0.24em] text-muted">Format</p>
+              <p class="mt-3 font-medium text-ink">Parquet & CSV</p>
+            </div>
+            <div class="bg-paper p-5">
+              <p class="font-mono text-[11px] font-semibold uppercase tracking-[0.24em] text-muted">Posture</p>
+              <p class="mt-3 font-medium text-ink">Schema-first</p>
+            </div>
+            <div class="bg-paper p-5">
+              <p class="font-mono text-[11px] font-semibold uppercase tracking-[0.24em] text-muted">Access</p>
+              <p class="mt-3 font-medium text-ink">Direct review</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="Operating principles" class="bg-ink text-paper">
+      <div class="mx-auto grid max-w-7xl gap-px px-6 py-10 sm:px-8 lg:grid-cols-3 lg:px-10">
+        <article class="border-white/15 py-10 lg:border-r lg:pr-10">
+          <p class="font-mono text-xs font-semibold uppercase tracking-[0.28em] text-slate-300">01</p>
+          <h2 class="mt-7 text-2xl font-semibold tracking-[-0.04em]">Structured before scaled</h2>
+          <p class="mt-5 leading-7 text-slate-300">Datasets should be legible first: stable columns, clear dates, typed geography and no unnecessary presentation layer.</p>
+        </article>
+        <article class="border-white/15 py-10 lg:border-r lg:px-10">
+          <p class="font-mono text-xs font-semibold uppercase tracking-[0.28em] text-slate-300">02</p>
+          <h2 class="mt-7 text-2xl font-semibold tracking-[-0.04em]">Regional context matters</h2>
+          <p class="mt-5 leading-7 text-slate-300">Local signals become useful when address, postcode, authority, date and decision fields can be compared without manual cleanup.</p>
+        </article>
+        <article class="py-10 lg:pl-10">
+          <p class="font-mono text-xs font-semibold uppercase tracking-[0.28em] text-slate-300">03</p>
+          <h2 class="mt-7 text-2xl font-semibold tracking-[-0.04em]">Claims stay narrow</h2>
+          <p class="mt-5 leading-7 text-slate-300">Coverage, refresh cadence and commercial access are described only where the underlying source and delivery process support them.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="data" class="mx-auto max-w-7xl px-6 py-24 sm:px-8 lg:px-10">
+      <div class="grid gap-12 lg:grid-cols-[0.85fr_1.15fr]">
+        <div>
+          <p class="font-mono text-xs font-semibold uppercase tracking-[0.28em] text-accent">Data posture</p>
+          <h2 class="mt-6 text-4xl font-semibold tracking-[-0.05em] text-ink sm:text-5xl">A restrained surface for regional intelligence.</h2>
+          <p class="mt-7 max-w-xl text-lg leading-8 text-muted">
+            IndexRidge is designed for small, high-signal data products: documented extracts, schema checks, release notes and a clear path from sample review to private delivery.
+          </p>
+        </div>
+
+        <div class="overflow-hidden rounded-3xl border hairline bg-surface shadow-sm">
+          <div class="border-b hairline p-7 sm:p-8">
+            <p class="font-mono text-xs font-semibold uppercase tracking-[0.28em] text-muted">Flagship direction</p>
+            <h3 class="mt-5 text-3xl font-semibold tracking-[-0.045em] text-ink">UK Regional Geospatial Signal Dataset</h3>
+            <p class="mt-5 max-w-2xl leading-7 text-muted">
+              A private-preview data direction for teams that need normalized regional indicators, postcode structure and clean analytical handoff without vendor theatre.
+            </p>
+          </div>
+
+          <dl class="grid text-sm sm:grid-cols-2">
+            <div class="border-b hairline p-7 sm:border-r">
+              <dt class="font-mono text-[11px] font-semibold uppercase tracking-[0.24em] text-muted">Primary fields</dt>
+              <dd class="mt-3 font-medium text-ink">Authority, address, postcode, date, decision, coordinates</dd>
+            </div>
+            <div class="border-b hairline p-7">
+              <dt class="font-mono text-[11px] font-semibold uppercase tracking-[0.24em] text-muted">Delivery shape</dt>
+              <dd class="mt-3 font-medium text-ink">Documented files and private review bundles</dd>
+            </div>
+            <div class="border-b hairline p-7 sm:border-b-0 sm:border-r">
+              <dt class="font-mono text-[11px] font-semibold uppercase tracking-[0.24em] text-muted">Use cases</dt>
+              <dd class="mt-3 font-medium text-ink">Property, planning, local-market and energy screening</dd>
+            </div>
+            <div class="p-7">
+              <dt class="font-mono text-[11px] font-semibold uppercase tracking-[0.24em] text-muted">Commercial status</dt>
+              <dd class="mt-3 font-medium text-ink">Direct enquiry / private preview</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="delivery" class="border-y hairline bg-surfaceAlt">
+      <div class="mx-auto max-w-7xl px-6 py-20 sm:px-8 lg:px-10">
+        <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+          <div>
+            <p class="font-mono text-xs font-semibold uppercase tracking-[0.28em] text-accent">Delivery</p>
+            <h2 class="mt-6 text-4xl font-semibold tracking-[-0.05em] text-ink sm:text-5xl">Simple files. Clear checks. No inflated platform claims.</h2>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div class="rounded-2xl border hairline bg-surface p-6">
+              <h3 class="font-semibold text-ink">Schema documentation</h3>
+              <p class="mt-3 leading-7 text-muted">Field definitions, allowed values and date/coordinate treatment travel with the dataset.</p>
+            </div>
+            <div class="rounded-2xl border hairline bg-surface p-6">
+              <h3 class="font-semibold text-ink">Quality reporting</h3>
+              <p class="mt-3 leading-7 text-muted">Decision normalization, date contracts and geography coverage are treated as checks, not decoration.</p>
+            </div>
+            <div class="rounded-2xl border hairline bg-surface p-6">
+              <h3 class="font-semibold text-ink">Buyer review</h3>
+              <p class="mt-3 leading-7 text-muted">Samples and private-preview packs can be reviewed before any operational commitment.</p>
+            </div>
+            <div class="rounded-2xl border hairline bg-surface p-6">
+              <h3 class="font-semibold text-ink">Quiet operation</h3>
+              <p class="mt-3 leading-7 text-muted">The site stays deliberately plain: direct contact, clear scope and no fabricated certifications.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="bg-ink px-6 py-24 text-paper sm:px-8 lg:px-10">
+      <div class="mx-auto max-w-7xl">
+        <div class="max-w-3xl">
+          <p class="font-mono text-xs font-semibold uppercase tracking-[0.28em] text-slate-300">Contact</p>
+          <h2 class="mt-7 text-5xl font-semibold tracking-quiet sm:text-6xl">For dataset review, regional extracts or technical due diligence.</h2>
+          <p class="mt-7 max-w-2xl text-lg leading-8 text-slate-300">
+            Send a concise note with the geography, source type, delivery format or evaluation requirement. Early requests are handled directly.
+          </p>
+          <a href="mailto:IndexRidge@outlook.com" class="mt-8 inline-flex w-full items-center justify-between rounded-full border border-white/35 px-6 py-4 text-left text-sm font-medium text-paper transition hover:border-white/70 sm:w-auto sm:min-w-[22rem]">
+            <span>IndexRidge@outlook.com</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
 </body>
 </html>
